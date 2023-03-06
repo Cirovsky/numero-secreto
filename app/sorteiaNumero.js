@@ -1,6 +1,6 @@
 /* variáveis */
-const menorValor = 10;
-const maiorValor = 100;
+const menorValor = 1;
+const maiorValor = 1000;
 const numeroSecreto = sorteio(menorValor, maiorValor);
 /* funções */
 function sorteio (menorValor = 1, maiorValor = 1000) {

@@ -5,10 +5,14 @@ recognition.lang = 'pt-Br';
 const mensagem = document.querySelector("#chute");
 
 const tentativa = document.querySelector("#tentativa");
-tentativa.onclick = () => recognition.start();
+recognition.start();
 
 let resposta;
 recognition.addEventListener("result", (e) => {
+    resposta = onSpeak(e);
+    exibeResposta(resposta);
+});
+recognition.addEventListener("end", (e) => {
     resposta = onSpeak(e);
     exibeResposta(resposta);
 });

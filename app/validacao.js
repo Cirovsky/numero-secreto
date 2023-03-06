@@ -19,10 +19,10 @@ function verificaResposta(resposta){
     }else{
         mensagem.innerHTML = `
         <h2>você disse:</h2>
-        <span class="resposta">${resposta}</span>`
+        <span class="resposta">${numero}</span>`
         if(numero < menorValor || numero > maiorValor){
             mensagem.innerHTML += `
-        <h3>${resposta} não é valor válido. o número secreto está entre ${menorValor} e ${maiorValor}</h3>`
+        <h3>${numero} não é valor válido. o número secreto está entre ${menorValor} e ${maiorValor}</h3>`
         }else{
             if (numero == numeroSecreto){
                 mensagem.innerHTML += `
