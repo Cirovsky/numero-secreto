@@ -28,7 +28,7 @@ header{
     align-items: center;
     height: 50vh;
 }
-.mensagem{
+.container__mensagem{
     display: flex;
     flex-direction: column;
     align-items: center;

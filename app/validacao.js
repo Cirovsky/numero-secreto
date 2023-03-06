@@ -1,5 +1,4 @@
 const botaoTentativa = document.querySelector("#tentativa");
-const containerBotao = document.querySelector(".container__botao");
 function adicionaBotaoNovoJogo(){
     const botao = document.createElement("button");
     botao.className = "botao";
@@ -13,10 +12,17 @@ function verificaResposta(resposta){
     if(resposta == "game over"){
         console.log(document.querySelector('header'))
         document.body.classList.add('game-over');
-        mensagem.innerHTML = `
-            <h2>GAME OVER</h2>`;
-        containerBotao.appendChild(adicionaBotaoNovoJogo());
+        document.querySelector(".mensagem").remove();
         document.querySelector('header').remove();
+        document.querySelector(".container").innerHTML = `
+        <div id="chute" class="mensagem container__mensagem">
+        <h2>GAME OVER</h2>
+        </div>
+        <div class="container__botao">
+        </div>`;
+        if(document.querySelector(".botao") == null){
+            document.querySelector(".container__botao").appendChild(adicionaBotaoNovoJogo());
+        }
     }else{
         if(Number.isNaN(numero)){
             console.log('valor inválido')
@@ -35,7 +41,7 @@ function verificaResposta(resposta){
                 if (numero == numeroSecreto){
                     mensagem.innerHTML += `
                 <h3 class="venceu">você acertou o número secreto</h3>`
-                containerBotao.appendChild(adicionaBotaoNovoJogo())
+                document.querySelector(".container__botao").appendChild(adicionaBotaoNovoJogo())
                 }else if(numero < numeroSecreto){
                     mensagem.innerHTML += `
                 <h3>o número secreto é <i class="fa-solid fa-up-long"></i></h3>`
