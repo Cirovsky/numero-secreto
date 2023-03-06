@@ -4,7 +4,7 @@ recognition.lang = 'pt-Br';
 
 const mensagem = document.querySelector("#chute");
 
-const tentativa = document.querySelector(".tentativa");
+const tentativa = document.querySelector("#tentativa");
 tentativa.onclick = () => recognition.start();
 
 let resposta;

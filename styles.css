@@ -50,7 +50,7 @@ header{
     display: grid;
     height: 15vh;
 }
-.tentativa{
+.botao{
     align-self: end;
     background-color: var(--cor-fonte);
     color: var(--cor-fundo);
