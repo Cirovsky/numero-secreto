@@ -1,0 +1,44 @@
+:root{
+    --cor-fundo: rgb(23, 114, 102);
+    --cor-fonte: rgb(252, 244, 244);
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: "Poppins";
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.titulo{
+    font-size: 1.7em;
+    padding: 2em 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5em;
+}
+.mensagem h2{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.mensagem span{
+    font-size: 2em;
+}
+.mensagem h3{
+
+}
