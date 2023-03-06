@@ -2,6 +2,7 @@
     --cor-fundo: rgb(23, 114, 102);
     --cor-fonte: rgb(252, 244, 244);
     --cor-amarelo: rgb(252, 229, 126);
+    --cor-gameover: rgb(170, 46, 46);
 }
 
 body{
@@ -63,4 +64,7 @@ header{
     font-size: 1.1em;
     color: var(--cor-amarelo);
     text-decoration: underline;
+}
+.game-over{
+    background: var(--cor-gameover);
 }

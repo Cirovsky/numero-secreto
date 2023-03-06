@@ -3,8 +3,6 @@ const recognition = new SpeechRecognition();
 recognition.lang = 'pt-Br';
 
 const mensagem = document.querySelector("#chute");
-
-const tentativa = document.querySelector("#tentativa");
 recognition.start();
 
 let resposta;
@@ -18,6 +16,6 @@ function onSpeak(e) {
 }
 
 function exibeResposta(resposta) {
-    verificaResposta(resposta)
+    verificaResposta(resposta);
 }
 recognition.addEventListener("end", () => recognition.start());
