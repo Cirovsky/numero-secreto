@@ -1,8 +1,7 @@
 /* variáveis */
-const menorValor = 1;
-const maiorValor = 10;
+const menorValor = 10;
+const maiorValor = 100;
 const numeroSecreto = sorteio(menorValor, maiorValor);
-console.log(numeroSecreto);
 /* funções */
 function sorteio (menorValor = 1, maiorValor = 1000) {
     const valorSorteado = parseInt(Math.random()*(maiorValor - menorValor + 1) + menorValor);
